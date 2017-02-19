@@ -1,3 +1,6 @@
+:root {
+    font-size: 16px;
+}
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
@@ -5,7 +8,7 @@ body {
     justify-content: space-between;
     background: linear-gradient(135deg, rgba(55,103,120,1) 0%,rgba(86,177,179,1) 100%);
     flex-direction: column;
-    font-size: 18px;
+    font-size: 1rem;
 }
 main {
     color: #eee;
@@ -13,6 +16,13 @@ main {
 }
 footer {
     text-align: right;
+}
+.title {
+    font-size: .8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    opacity: .6;
 }
 .closeBtn {
     background: url("./asset/close.svg") no-repeat;
