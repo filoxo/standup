@@ -1,6 +1,5 @@
-:root {
-    font-size: 16px;
-}
+ /* General styles */
+:root { font-size: 16px; }
 * { box-sizing: border-box; } 
 body {
     display: flex;
@@ -18,9 +17,6 @@ main {
     align-items: center;
     justify-content: space-between;
 }
-footer {
-    text-align: right;
-}
 input[type=number] {
     border-radius: 3px;
     border: none;
@@ -29,6 +25,7 @@ input[type=number] {
     text-align: center;
 }
 
+/* Components */
 .title {
     font-size: .8rem;
     font-weight: 300;
@@ -94,20 +91,6 @@ button.icon {
     height: 60%;
     box-shadow: inset 0 0 0 32px;
 }
-
-#closeBtn {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#configure {
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .progress {
     background-color: rgba(255,255,255,.5);
     padding: 15px;
@@ -120,4 +103,18 @@ button.icon {
     padding-bottom: 15px;
     transition: width 150ms;
     width: 0;
+}
+
+/* Named element styles */
+#closeBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#configure {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
 }
