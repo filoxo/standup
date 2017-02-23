@@ -1,6 +1,7 @@
 :root {
     font-size: 16px;
 }
+* { box-sizing: border-box; } 
 body {
     display: flex;
     background: linear-gradient(135deg, rgba(55,103,120,1) 0%,rgba(86,177,179,1) 100%);
@@ -20,6 +21,14 @@ main {
 footer {
     text-align: right;
 }
+input[type=number] {
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+    padding: 3px;    
+    text-align: center;
+}
+
 .title {
     font-size: .8rem;
     font-weight: 300;
@@ -92,6 +101,8 @@ button.icon {
 .progress-bar {
     background: #fff;
     border-radius: 15px;
-    margin: 0 10px;
+    margin: 0 auto;
     padding-bottom: 15px;
+    transition: width 150ms;
+    width: 0;
 }
