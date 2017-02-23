@@ -1,9 +1,9 @@
 var menubar = require('menubar')
 
-var mb = menubar({width: 300, height: 150})
+var mb = menubar({width: 300, height: 150, alwaysOnTop: true})
 
 mb.on('ready', function ready () {
-  
+
   console.log('app is ready')
 
 })

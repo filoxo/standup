@@ -6,10 +6,20 @@
 <body>
   <main>
     <h1 class="title">StandUp</h1>
+    <button class="icon power" type="button" id="closeBtn">Close</button>
+    <div class="timer">
+      <select name="intervalSelect" id="intervalSelect">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+      </select>
+      <span id="countdown">countdown</span>
+    </div>
+    <footer class="progress">
+      <div class="progress-bar"></div>
+    </footer>
   </main>
-  <footer>
-    <button type="button" class="closeBtn" id="closeBtn"></button>
-  </footer>
   <script src="./app/index.js"></script>
 </body>
 </html>

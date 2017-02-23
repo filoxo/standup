@@ -2,17 +2,20 @@
     font-size: 16px;
 }
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: linear-gradient(135deg, rgba(55,103,120,1) 0%,rgba(86,177,179,1) 100%);
-    flex-direction: column;
     font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
 }
 main {
     color: #eee;
     text-shadow: 0 0 5px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
 }
 footer {
     text-align: right;
@@ -26,9 +29,69 @@ footer {
 }
 .closeBtn {
     background: url("./asset/close.svg") no-repeat;
-    background-size: contain; 
+    background-size: contain;
     border: none;
     background-color: transparent;
     width: 20px;
     height: 20px;
+}
+.hidden {
+    display: none;
+}
+
+button.icon {
+    background-color: transparent;
+}
+.icon, .icon * {
+    box-sizing: border-box;
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-style: normal;
+    color: #ddd;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+}
+.icon::after, .icon::before {
+    content: '';
+    pointer-events: none;
+}
+.power {
+  width: 18px;
+  height: 18px;
+  border: 2px solid;
+  border-radius: 50%;
+  border-top-color: transparent;
+  margin: 6px;
+  position: relative;
+}
+.power::before {
+    content: '';
+  position: absolute;
+  top: -15%;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 60%;
+  box-shadow: inset 0 0 0 32px;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress {
+    background-color: rgba(255,255,255,.5);
+    padding: 15px;
+    width: 100%;
+}
+.progress-bar {
+    background: #fff;
+    border-radius: 15px;
+    margin: 0 10px;
+    padding-bottom: 15px;
 }
