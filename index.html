@@ -4,10 +4,18 @@
 <link rel="stylesheet" href="./app/style.css">
 </head>
 <body>
-  <main>hello</main>
-  <footer>
-    <button type="button" class="closeBtn" id="closeBtn"></button>
-  </footer>
+  <main>
+    <button class="icon power" type="button" id="closeBtn">Close</button>
+    <div class="timer">
+      <select name="intervalSelect" id="intervalSelect">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+      </select>
+      <span id="countdown">countdown</span>
+    </div>
+  </main>
   <script src="./app/index.js"></script>
 </body>
 </html>
