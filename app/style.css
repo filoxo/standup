@@ -47,7 +47,15 @@ input[type=number] {
 .hidden {
     display: none;
 }
-
+.btn {
+    background: #fff;
+    border: none;
+    border-radius: 5rem;
+    color: rgb(71,140,150);
+    margin-top: 1rem;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
 button.icon {
     background-color: transparent;
 }
@@ -91,6 +99,13 @@ button.icon {
     position: absolute;
     top: 0;
     left: 0;
+}
+#configure {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .progress {
