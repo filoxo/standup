@@ -7,19 +7,20 @@
   <main>
     <h1 class="title">StandUp</h1>
     <button class="icon power" type="button" id="closeBtn">Close</button>
-    <div class="configure">
-      <span>
+    <section id="configure">
+      <div>
         Stand
         <input type="number" step="5" max="55" min="5" value="10"/>
         mins every
         <input type="number" step="1" max="12" min="1" value="1"/>
         hrs
-      </span>
-    </div>
-    <div class="timer">
+      </div>
+      <button class="btn" type="button">Start</button>
+    </section>
+    <div class="timer hidden">
       <span id="countdown">00:00</span>
     </div>
-    <footer class="progress">
+    <footer class="progress hidden">
       <div class="progress-bar"></div>
     </footer>
   </main>
