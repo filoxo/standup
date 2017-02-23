@@ -1,15 +1,18 @@
 body {
+    background: linear-gradient(135deg, rgba(55,103,120,1) 0%,rgba(86,177,179,1) 100%);;
+    display:flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(135deg, rgba(55,103,120,1) 0%,rgba(86,177,179,1) 100%);
-    flex-direction: column;
     font-size: 18px;
+    margin: 0;
 }
 main {
     color: #eee;
     text-shadow: 0 0 5px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
 }
 footer {
     text-align: right;
@@ -69,4 +72,16 @@ button.icon {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.progress {
+    background-color: rgba(255,255,255,.5);
+    padding: 15px;
+    width: 100%;
+}
+.progress-bar {
+    background: #fff;
+    border-radius: 15px;
+    margin: 0 10px;
+    padding-bottom: 15px;
 }
