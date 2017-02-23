@@ -7,14 +7,17 @@
   <main>
     <h1 class="title">StandUp</h1>
     <button class="icon power" type="button" id="closeBtn">Close</button>
+    <div class="configure">
+      <span>
+        Stand
+        <input type="number" step="5" max="55" min="5" value="10"/>
+        mins every
+        <input type="number" step="1" max="12" min="1" value="1"/>
+        hrs
+      </span>
+    </div>
     <div class="timer">
-      <select name="intervalSelect" id="intervalSelect">
-        <option value="10">10</option>
-        <option value="20">20</option>
-        <option value="30">30</option>
-        <option value="40">40</option>
-      </select>
-      <span id="countdown">countdown</span>
+      <span id="countdown">00:00</span>
     </div>
     <footer class="progress">
       <div class="progress-bar"></div>
