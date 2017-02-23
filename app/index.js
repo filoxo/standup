@@ -14,7 +14,6 @@ const appState = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.querySelector('#closeBtn')
-    const intervalSelect = document.querySelector('#intervalSelect')
     const countdown = document.querySelector('#countdown')
     const hasTimer = appState.current()
     function startTimer () {
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('stand up now?')
     }
     if (hasTimer) {
-        intervalSelect.style.display = 'none'
         let referenceTime = new Date()
         function updateCountdown() {
             const elapsedTime = new Date() - referenceTime
@@ -32,11 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         setInterval(updateCountdown, 1000)
     } else {
-        intervalSelect.addEventListener('change', (e) => {
-            const timerValue = parseInt(e.target.value, 10) * 60
-            appState.update(timerValue)
-            appTimer = setInterval(startTimer, timerValue * 1000)
-        })
     }
     closeBtn.addEventListener('click', window.close)
 });
